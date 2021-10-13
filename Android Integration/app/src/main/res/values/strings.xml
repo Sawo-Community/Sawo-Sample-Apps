@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Sawo Android SDK</string>
+    <string name="login_button">Login</string>
+    <string name="prompt_info_title">Please unlock your device</string>
+    <string name="prompt_info_cancel_text">Cancel</string>
+    <string name="prompt_cancel_toast">You must unlock to login</string>
+    <string name="trusted_device_notification_activity_biometric_cancel">You must unlock first</string>
+    <string name="trusted_device_notification_activity_yes_btn">YES</string>
+    <string name="trusted_device_notification_activity_no_btn">NO</string>
+    <string name="trusted_device_notification_activity_device_authorized">The device is authorized</string>
+    <string name="trusted_device_notification_activity_device_rejected">The device  is rejected</string>
+    <string name="trusted_device_notification_activity_text_view_1_text">
+        Are you trying to login from %1$s?
+    </string>
+    <string name="trusted_device_notification_activity_text_view_2_text">
+        Tap YES to trust the device else tap on NO
+    </string>
+</resources>
