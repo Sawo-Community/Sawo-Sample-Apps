@@ -28,7 +28,7 @@
 
 4. Sync your project
 
-5. Go to [https://dev.sawolabs.com](https://dev.sawolabs.com) and create a project and copy the api key and api key secret 
+5. Go to [https://dev.sawolabs.com](https://dev.sawolabs.com) and create a project and copy the api key and secret key 
 
 6. Create an Activity in Android Studio to get login success response for this example lets assume it is CallbackActivity
 
