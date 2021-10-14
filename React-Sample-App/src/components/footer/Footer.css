@@ -1,0 +1,31 @@
+footer {
+  background-image: url("../../assets//footerbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-columns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+  color: #fff;
+}
+footer a {
+  color: #ffa500 !important;
+}
+footer h3 {
+  color: #ffa500 !important;
+}
+.social-links {
+  padding-top: 130px;
+  color: #fff;
+  width: 250px;
+}
+.social-links img {
+  margin-right: 5px;
+}
+@media only screen and (max-width: 1000px) {
+  footer {
+    padding-top: 400px;
+  }
+}
