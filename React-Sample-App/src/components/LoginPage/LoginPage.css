@@ -1,0 +1,40 @@
+.containerStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+.sectionStyle {
+  width: 500px;
+  height: 400px;
+  border: 1px;
+  border-color: black;
+}
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer {
+  padding: 1rem;
+  background-color: #f3f3f3;
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loggedin {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  padding: 1rem;
+}
