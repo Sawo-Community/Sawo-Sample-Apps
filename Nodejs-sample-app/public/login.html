@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <div id="sawo-container" style="height: 300px; width: 300px"></div>
+
+    <script src="https://websdk.sawolabs.com/sawo.min.js"></script>
+    <script>
+      // Fetching payload from sessionStorage
+      const payload = sessionStorage.getItem("payload");
+      if (payload) {
+        // If the payload is available, that means the user has logged in already.
+        // So redirecting back to "/login"
+        window.location.href = "/success";
+      }
+      var config = {
+        // should be same as the id of the container created on 3rd step
+        containerID: "sawo-container",
+        // can be one of 'email' or 'phone_number_sms'
+        identifierType: "email",
+        // Add the API key copied from 2nd step
+        apiKey: "Your API Key",
+        // Add a callback here to handle the payload sent by sdk
+        onSuccess: (payload) => {
+          // Storing the payload in sessionStorage
+          sessionStorage.setItem("payload", JSON.stringify(payload));
+          // Redirecting to "/success"
+          window.location.href = "/success";
+        },
+      };
+      var sawo = new Sawo(config);
+      sawo.showForm();
+    </script>
+  </body>
+</html>
