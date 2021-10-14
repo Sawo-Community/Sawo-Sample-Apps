@@ -1,0 +1,16 @@
+<div class="containerStyle">
+  <section>
+    <h1 style="text-align: center">SAWO Angular Example App</h1>
+    <h1 style="text-align: center; margin-bottom: 10px">
+      User Logged In: {{ isLoggedIn }}
+    </h1>
+    <div class="loggedin" *ngIf="isLoggedIn">
+      <div style="text-align: start">
+        <h2>User Successful Login</h2>
+        <p style="margin: 10px 0">UserId: {{ userPayload.user_id }}</p>
+        <p>Verification Token: {{ userPayload.verification_token }}</p>
+      </div>
+    </div>
+    <div class="formContainer" id="sawo-container" *ngIf="!isLoggedIn"></div>
+  </section>
+</div>
